@@ -36,6 +36,23 @@ def insert_AcessRecord(request):
     AR.save()
     return HttpResponse('AcessRecord is created')
 
+def display_topics(request):
+    topics=Topic.objects.all()
+    d={'topics':topics}
+    return render(request,'display_topics.html',d)
+
+def display_webpages(request):
+    webpages=Webpage.objects.all()
+    d={'webpages':webpages}
+    return render(request,'display_webpages.html',d)
+
+def display_acessrecords(request):
+    acessrecords=AcessRecord.objects.all()
+    d={'acessrecords':acessrecords}
+    return render(request,'display_acessrecords.html',d)
+
+
+
 
 
 

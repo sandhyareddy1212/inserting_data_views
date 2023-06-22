@@ -1,5 +1,5 @@
 """
-URL configuration for project30 project.
+URL configuration for project31 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -20,10 +20,5 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('insert_topic/',insert_topic,name='insert_topic'),
-    path('insert_webpage/',insert_webpage,name='insert_webpage'),
-    path('insert_AcessRecord/',insert_AcessRecord,name='insert_AcessRecord'),
     path('display_topics/',display_topics,name='display_topics'),
-    path('display_webpages/',display_webpages,name='display_webpages'),
-    path('display_acessrecords/',display_acessrecords,name='display_acessrecords'),
 ]
